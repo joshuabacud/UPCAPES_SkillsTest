@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Bonus Skills Test Assessment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class = "lightbg">
+  <main class="m-4 p-4 d-flex justify-content-center align-items-center h-100">
+    <div class="container-fluid ">
+      <div class="row h-100">
+        <!-- THE LEFT SECTION -->
+        <div class="col-12 col-sm-12 col-md-6 offset-md-3" >
+          <div class="panel lightmode lightmodetext" id="detailssection">
+            <div class="panel-body p-3">
+              <form action="#">
+                <div class="firstrow">
+                  <div class="header">
+                    <h3 for="name">
+                        Contact Details
+                    </h3>
+                  </div>
+                  <!-- Choose Theme -->
+                  <div class="form-group upperright">
+                    <div class="form-switch form-check-inline form-switch" id="modeButton">
+                      <label class="switch">
+                        <input type="checkbox" name="modeOptions" onclick="ChangeMode()">
+                        <span class="slider"></span>
+                        <i class="fas fa-sun sunpos" id="sun"></i>
+                        <i class="fas fa-moon moonpos" id="moon"></i>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Name -->
+                <div class="form-group">
+                  <label class="control-label" for="name">
+                    Name: 
+                  </label>
+                  <input  class="form-control" type="text" id="name" name="name" placeholder="Input name here"/>
+                </div>
+                <!-- Contact Number -->
+                <div class="form-group">
+                  <label class="control-label" for="contactnumber">
+                    Contact Number:
+                  </label>
+                  <input class="form-control" type="text" id="contactnumber" name="contactnumber" placeholder="639XXXXXXXXX"/>
+                </div>
+                
+                <!-- Submit Button -->
+                  <button  type="button" class="btn btn-sm lightbtn" id="html" onclick="Submit()">Submit</button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- THE RIGHT SECTION -->
+        <div class="p-3 col-12 col-sm-12 col-md-6 offset-md-3">
+          <div class="panel" id="outputpanel">
+            <div class="panel-body p-3">
+                <p id="Output"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+  </main>
+  <script src = "main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
